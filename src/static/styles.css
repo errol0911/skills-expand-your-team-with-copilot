@@ -190,6 +190,46 @@ section h3 {
   justify-content: center;
 }
 
+.activity-sharing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.share-link,
+.activity-sharing button {
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.share-link:hover,
+.activity-sharing button:hover {
+  background-color: var(--border-light);
+}
+
+.share-link:focus-visible,
+.activity-sharing button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.share-status {
+  width: 100%;
+  color: var(--text-secondary);
+}
+
+.share-status:empty {
+  display: none;
+}
+
 /* Activity Tag */
 .activity-tag {
   position: absolute;
